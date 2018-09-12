@@ -22,7 +22,7 @@ def outcome_of_pass_letter(letter)
   end
 end
 def check_game_status
-  if @game.pass_letter == @hidden_word && @player.lives > 0
+  if pass_letter(letter) == @hidden_word && @player.lives > 0
     return "game won"
   elsif @player.lives < 1
     return "game lost"
